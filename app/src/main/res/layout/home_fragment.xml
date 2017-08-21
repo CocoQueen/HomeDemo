@@ -4,5 +4,26 @@
     android:layout_height="match_parent"
     android:background="@color/red"
     android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/mSc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mLin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mVp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
